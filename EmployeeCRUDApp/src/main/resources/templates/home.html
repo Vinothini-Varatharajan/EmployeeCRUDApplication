@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Action Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      .form-box {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .form-title {
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .btn-custom {
+        background-color: #ff6f61;
+        border: none;
+        width: 100%;
+        margin-bottom: 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-custom:hover {
+        background-color: #ff3b2e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-box">
+      <h2 class="form-title">Employee Crud</h2>
+
+      <form action="/create" method="post">
+        <button type="submit" class="btn btn-custom text-white">Create</button>
+      </form>
+
+      <form action="/read" method="post">
+        <button type="submit" class="btn btn-custom text-white">Read</button>
+      </form>
+
+      <form action="/update" method="post">
+        <button type="submit" class="btn btn-custom text-white">Update</button>
+      </form>
+
+      <form action="/delete" method="post">
+        <button type="submit" class="btn btn-custom text-white">Delete</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

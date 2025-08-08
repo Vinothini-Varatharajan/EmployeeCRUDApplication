@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Page</title>
+<style>
+  body {
+    background-color: #fff0f0;
+    font-family: Arial, sans-serif;
+    color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    background-color: #f8d7da; /* lightcoral-ish */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(199, 50, 50, 0.4);
+    text-align: center;
+    width: 320px;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+
+  form label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  form input[type="number"] {
+    padding: 8px 10px;
+    width: 80%;
+    border: 2px solid #f08080;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+
+  form input[type="number"]:focus {
+    border-color: #cd5c5c;
+    outline: none;
+  }
+
+  form input[type="submit"] {
+    background-color: #f08080;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #cd5c5c;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>This is Delete page</h1>
+    <form action="deleting" method ="get">
+      <label for="idInput">Enter Your Id to Delete:</label>
+      <input id="idInput" type="number" name="id" required>
+      <input type="submit" value="Delete">
+    </form>
+  </div>
+</body>
+</html>
